@@ -1,12 +1,17 @@
 .grid-container {
     display: flex;
     flex-direction: column;
+    border: 1.5px solid black;
+    padding: 0;
 }
 
 .row {
-    display: flex; 
+    display: flex;
+    flex: 1;
+    border: none;
 }
 
 .cell {
     border: 1.5px solid black;
+    flex: 1;
 }
