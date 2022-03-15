@@ -19,6 +19,9 @@ resetBtn.addEventListener("click", () => { buildGrid(); fillMode = setFillMode("
 const rainbowBtn = document.querySelector(".rainbow")
 rainbowBtn.addEventListener("click", () => { buildGrid(); fillMode = setFillMode("rainbow") });
 
+const blackBtn = document.querySelector(".black")
+blackBtn.addEventListener("click", () => { buildGrid(); fillMode = setFillMode("black") });
+
 const eraserBtn = document.querySelector(".eraser")
 eraserBtn.addEventListener("click", () => { fillMode = setFillMode("eraser") });
 
@@ -68,7 +71,7 @@ function setFillMode(mode) {
                 cell.addEventListener("mouseover", setFillColor);
                 });
             break;
-
+        
         case "eraser":
             cells.forEach((cell) => {
                 cell.removeEventListener("mouseover", setFillColor);
