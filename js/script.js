@@ -50,7 +50,7 @@ function buildGrid() {
 function changeGridSize() {
     gridSize = this.value;
     buildGrid(this.value);
-    setCellFill(cellFill);
+    setFillMode(fillMode);
 }
 
 // pass string to set cell filling mode
